@@ -8,315 +8,247 @@
 </head>
 
 <body>
-    <div id="fb-root"></div>
-    <script>
-        (function (d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s);
-            js.id = id;
-            js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&appId=724760427543683&version=v2.0";
-            fjs.parentNode.insertBefore(js, fjs);
-        }(document, 'script', 'facebook-jssdk'));
-    </script>
 
     <!--# include file="/includes/menu.html" -->
 
     <!-- SITE CONTENT -->
-    <div class="container content">
-
-
-
-        <!-- MAINBAR -->
-        <div class="col-lg-8 col-md-8">
-            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <a href="/conta/criar">
-                            <img src="/resources/img/banner-007-g.png" alt="..." style="cursor: pointer;">
-                            <div class="carousel-caption">
-                            </div>
-                        </a>
-                    </div>
-                    <!--
-                    <div class="item">
-                        <a href="/noticias/eventos/sorteio">
-                            <img src="/resources/img/banner-004.png" alt="..." style="cursor: pointer;">
-                            <div class="carousel-caption">
-                            </div>
-                        </a>
-                    </div>
--->
-                </div>
-                <!-- Controls -->
-                <!--
-                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                </a>
-                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                </a>
--->
-            </div>
-            <br />
-
+    <div class="jumbotron">
+        <div class="container">
             <div class="row">
-
-                <!-- NEWS CONTROLS
-                <div class="col-lg-12 col-md-12">
-                    <div class="visible-lg-block visible-md-block">
-                        <ul class="nav nav-tabs ">
-                            <li><a href="#home" data-toggle="tab">All</a>
-                            </li>
-
-                            <li><a href="#profile" data-toggle="tab">Notícias</a>
-                            </li>
-
-                            <li><a href="#profile" data-toggle="tab">Eventos</a>
-                            </li>
-
-                            <li><a href="#profile" data-toggle="tab">Manutenção</a>
-                            </li>
-                        </ul>
+                <div class="col-lg-6 text-left">
+                    <div class="intro-section">
+                        <h1>Faça sua parte!</h1>
+                        <h5>Doe sua nota fiscal para sua entidade favorita.</h5>
+                        <p><a class="btn btn-lg myButton" href="#doar">DOAR AGORA</a>
+                        </p>
                     </div>
                 </div>
-                -->
-                <!-- NEWS SECTION -->
-                <div id="template-container">
-
-                    <div class="col-lg-12 col-md-12 news">
-                        <a href="/shop">
-                            <div class="col-md-5 col-sm-12">
-                                <img src="/resources/img/news-009.png" class="img-responsive">
-                            </div>
-                            <div class="col-md-7 col-sm-12 notice">
-                                <h1>Promoção! Pacote de Boost XP</h1>
-                                <p>Por apenas R$50,00, você leva 30 dias de VIP e mais 7.200WCoins! Agarre essa promoção e seja o TOP 1 do servidor.
-                                    <br />
-                                    </b>Não perca essa promoção e compre já!</p>
-                                <p>17/11/2014</p>
-
-                            </div>
-                        </a>
-                        <div class="clearfix"></div>
-                        <div class="col-lg-12 notice-separator"></div>
-                    </div>
-
-                    <div class="col-lg-12 col-md-12 news">
-                        <a href="/shop">
-                            <div class="col-md-5 col-sm-12">
-                                <img src="/resources/img/news-008.png" class="img-responsive">
-                            </div>
-                            <div class="col-md-7 col-sm-12 notice">
-                                <h1>Promoção WCoin em dobro encerrada</h1>
-                                <p>A promoção de WCoins em dobro foi encerrada. Veja as novas promoções em nosso Shopping</p>
-                                <p>19/11/2014</p>
-
-                            </div>
-                        </a>
-                        <div class="clearfix"></div>
-                        <div class="col-lg-12 notice-separator"></div>
-                    </div>
-
-
-                    <div class="col-lg-12 col-md-12 news">
-                        <a href="/shop/wcoin">
-                            <div class="col-md-5 col-sm-12">
-                                <img src="/resources/img/news-008.png" class="img-responsive">
-                            </div>
-                            <div class="col-md-7 col-sm-12 notice">
-                                <h1>Promoção! WCoin em dobro</h1>
-                                <p>O ADM ficou maluco! Com inauguração do shopping, estamos dobrando a quantidade de WCoin que você comprar. Comprou 2.000WCoin, levou 4.000, comprou 5.000, levou 10.000!
-                                    <br />
-                                    </b>Não perca essa promoção e compre já!</p>
-                                <p>11/11/2014</p>
-
-                            </div>
-                        </a>
-                        <div class="clearfix"></div>
-                        <div class="col-lg-12 notice-separator"></div>
-                    </div>
-
-
-                    <div class="col-lg-12 col-md-12 news">
-                        <a href="/noticias/evento-inauguracao">
-                            <div class="col-md-5 col-sm-12 text-center">
-                                <img src="/resources/img/news-005.png" class="img-responsive">
-                            </div>
-                            <div class="col-md-7 col-sm-12 notice">
-                                <h1>Bem vindo a World of MU</h1>
-                                <p>Jogue no melhor servidor HARD de MuOnline do Brasil. Vários spots customizados, drops equilibrados, limite de resets e muito mais...
-                                    <br />Crie sua conta e receba prémios!
-                                    <br />CLIQUE E SAIBA MAIS.</p>
-                                <p>09/11/2014</p>
-
-                            </div>
-                        </a>
-                        <div class="clearfix"></div>
-                        <div class="col-lg-12 notice-separator"></div>
-                    </div>
-
-
-
+                <div class="col-lg-6 text-right">
 
                 </div>
+            </div>
 
+        </div>
+    </div>
 
+    <div class="brands">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul>
+                        <li>
+                            <img src="http://www.blogdomadeira.com.br/wp-content/uploads/2013/08/Hospital-de-C%C3%A2ncer-de-Barretos-logo.jpg" class="img-responsive" heigth="60" width="40" />
+                        </li>
+                        <li>
+                            <img src="http://3.bp.blogspot.com/-AIIgVtP7qgo/T-hhAIQ5A-I/AAAAAAAAAkc/Yt0zrtIcvUU/s1600/aacd.jpg" class="img-responsive" heigth="60" width="40" />
+                        </li>
+
+                        <li>
+                            <img src="http://www.santacasasp.org.br/upSrv01/up_publicacoes/5752/5742_logo.png" class="img-responsive" heigth="60" width="40" />
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
-
-        <!-- SIDEBAR -->
-        <div class="col-lg-4  col-md-4 sidebar">
-
-            <div class="row panel">
-                <div class="panel-heading">
-                    <h3 class="panel-title">Servidor</h3>
-                </div>
-                <div class="panel-body">
-                    <table class="table table-hover table-condensed">
-                        <tbody>
-                            <tr>
-                                <th>Status</i>
-                                </th>
-                                <td class="server-status"></td>
-                            </tr>
-                            <tr>
-                                <th>Versão</th>
-                                <td>Season 6 Ep. 4</td>
-                            </tr>
-                            <tr>
-                                <th>Experiência</th>
-                                <td>20x</td>
-                            </tr>
-                            <tr>
-                                <th>Experiência <span class="label label-warning">VIP</span>
-                                </th>
-                                <td>30x</td>
-                            </tr>
+    </div>
+    <div class="content">
+        <div class="container">
 
 
-                            <tr>
-                                <th>Drops</th>
-                                <td>20%</td>
-                            </tr>
-                            <tr>
-                                <th>Reset <i class="glyphicon glyphicon-repeat"></i>
-                                </th>
-                                <td>Pontuativo</td>
-                            </tr>
-
-                            <tr>
-                                <th>Máximo Resets</th>
-                                <td>15</td>
-                            </tr>
-
-                            <tr>
-                                <th>Pontos por reset</th>
-                                <td>400</td>
-                            </tr>
-                            <tr class="table-separator">
-                                <th>Contas</th>
-                                <td class="qtd-account"></td>
-                            </tr>
-
-
-                            <tr>
-                                <th>Heróis</th>
-                                <td class="qtd-chars"></td>
-                            </tr>
-
-
-
-                            <tr>
-                                <th>Players <span class="label label-success">ONLINE</span>
-                                </th>
-                                <td class="qtd-online"></td>
-                            </tr>
-                            <tr>
-                                <th>Bug Bless</th>
-                                <td>Off</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="panel-footer  text-center">
-                    <a href="/servidor" class="btn">+ Mais detalhes</a>
-                </div>
-            </div>
-            <div class="row separator">
-                <div class="col-xs-6 text-center">
-                    <a href="/conta/criar" class="btn btn-lg">Criar conta</a>
-                </div>
-                <div class="col-xs-6 text-center">
-                    <a href="/download" class="btn  btn-lg">Download</a>
-                </div>
-            </div>
-            <div class="panel">
-                <div class="panel-heading">
-                    <h3 class="panel-title">Ranking TOP 5</h3>
-                </div>
-                <div class="panel-body">
-                    <table class="table table-striped text-center">
-                        <thead>
-                            <tr>
-                                <th>Rank</th>
-                                <th>Classe</th>
-                                <th>Nome</th>
-                                <th><span class="hidden-sm hidden-xs hidden-md">Resets</span>  <i class="glyphicon glyphicon-refresh visible-sm visible-xs visible-md"></i>
-                                </th>
-                                <th>Level</th>
-                            </tr>
-                        </thead>
-                        <tbody id="ranking-tbody" class="table-separator">
-
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-            <div class="panel">
-                <div class="panel-heading">
-                    <h3 class="panel-title">Equipe</h3>
-                </div>
-                <div class="panel-body">
-                    <table class="table table-striped text-center">
-                        <thead>
-                            <tr>
-                                <th>Cargo</th>
-                                <th>Nome</th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody id="gm-tbody" class="table-separator">
-                            <tr>
-                                <td>GameMaster</td>
-                                <td>TheEND</td>
-                                <td>
-                                    <a href="https://www.facebook.com/profile.php?id=100005586738020" target="_blank">
-                                        <img src="/resources/img/Facebook.png">
-                                    </a>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <td>GameMaster</td>
-                                <td>ENIGMA</td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                    </table>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="small-text-medium uppercase colored-text">SOBRE NÓS</div>
+                    <h2>Facilitamos o seu modo de doar</h2>
+                    <div class="divisor divisor-line colored-line"></div>
+                    <p>Doe sua nota fiscal sem esforço. Informe os dados necessários ou compartilhe com a hashtag #DoandoMinhaNota. Nós nos encarregamos do resto.</p>
                 </div>
             </div>
 
-            <div class="fb-like-box" data-href="https://www.facebook.com/pages/World-of-MU/1530397463863101?fref=ts" data-width="350" data-colorscheme="dark" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="thumbnail">
+                        <i class="glyphicon glyphicon-user colored-text i-lg"></i>
+                        <div class="caption">
+                            <h3 class="colored-text">Peça a Nota Fiscal</h3>
+                            <p>Solicite ao estabelecimento que gere uma nota fiscal sem o CPF.
+                                <br /><strong>Faça uma boa ação.</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4">
+                    <div class="thumbnail">
+                        <i class="glyphicon glyphicon-send colored-text i-lg"></i>
+                        <div class="caption">
+                            <h3 class="colored-text">Envie os dados</h3>
+                            <p>Envie a nota fiscal para nosso site por meio de uma das formas de envio.
+                                <br /><strong>Totalmente grátis.</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="thumbnail">
+                        <i class="glyphicon glyphicon-heart colored-text i-lg"></i>
+                        <div class="caption">
+                            <h3 class="colored-text">Nós fazemos o resto</h3>
+                            <p>Relaxe, que agora é nossa parte. Enviaremos a nota fiscal para sua <strong>entidade favorita.</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
     </div>
 
+    <div class="content content-white">
+        <div class="container">
+
+
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left">
+                    <div class="small-text-medium uppercase colored-text">COMO DOAR</div>
+                    <h2>Doe sua nota fiscal agora mesmo</h2>
+                    <div class="divisor colored-line"></div>
+                    <p>Para doar via formulário, basta preencher os campos com os dados da sua nota fiscal.
+                        <br /><strong>Lembre-se, a nota fiscal não pode estar vinculada a nenhum CPF</strong>.</p>
+                </div>
+
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 text-left">
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Entidade Social</label>
+                            <select class="form-control">
+                                <option>Santa Casa de São Paulo</option>
+                                <option>AACD</option>
+                                <option>Hospital do Cancer</option>
+                            </select>
+
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Data da compra</label>
+
+                            <div class='input-group date' id='datetimepicker5'>
+                                <input type="text" class="form-control" id="datetimepicker6" data-date-format="DD/MM/YYYY" />
+                                <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">COO</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="##########">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Valor</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="183,25">
+                        </div>
+
+                        <a href="#" class="btn myButton">Doar</a>
+                    </form>
+                </div>
+                <div class="clearfix"></div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="container">
+
+
+            <div class="row">
+                <div class="col-lg-12 text-left">
+                    <div class="small-text-medium uppercase colored-text">REDE SOCIAL</div>
+                    <h2>Doe usando a hashtag #DoandoMinhaNota</h2>
+                    <div class="divisor colored-line"></div>
+                    <p>Se quiser, você pode doar sua nota fiscal compartilhando no Facebook a imagem da sua nota fiscal (ela deve estar em boas condições de leitura) .
+                        <br />Além disso, coloque a hashtag <strong class="colored-text">#DoandoMinhaNota</strong> para podermos encontrá-la.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- SITE CONTENT -->
+    <div class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-xm-12 col-xs-12">
+                    <div class="stats">
+                        <p><i class="glyphicon glyphicon-send colored-text i-lg"></i>
+                        </p>
+                        <h1>500</h1> notas doadas.
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-xm-12 col-xs-12 colored-border">
+                    <div class="stats">
+                        <p><i class="glyphicon glyphicon-thumbs-up colored-text i-lg"></i>
+                        </p>
+                        <h1>58.600,47</h1> reais doados.
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-xm-12 col-xs-12">
+                    <div class="stats">
+                        <p><i class="glyphicon glyphicon-heart colored-text i-lg"></i>
+                        </p>
+                        <h1>10</h1> entidades cadastradas.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="content">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="small-text-medium uppercase colored-text">ENTIDADE SOCIAL</div>
+                    <h2>Cadastre-se agora mesmo para receber doações.</h2>
+                    <div class="divisor divisor-line colored-line"></div>
+                    <p>Para sua entidade social poder receber doações pelas notas fiscais cadastradas neste site, a entidade social deve possuir um simples cadastro conosco.
+                        <br />Para isso, basta preencher os campos abaixo informando nome e CNPJ.</p>
+                </div>
+
+                <div class="col-lg-12 text-left">
+                    <form role="form">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">CNPJ da entidade social</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="##.###.###/####-##">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Nome</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1">
+                        </div>
+
+                        <div class="form-group">
+                            <input id="i-check" type="checkbox">
+                            <label for="i-check" class="control-label" style="text-align: left; font-weight: normal">Eu concordo que o site DoandoMinhaNota.com.br pode cadastrar notas fiscais para minha entidade social com o CNPJ acima.</label>
+
+                        </div>
+                        <a href="#" class="btn myButton">Cadastrar</a>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
 
     <!--# include file="/includes/footer.html" -->
 
+    <script type="text/javascript">
+        PANDOX.SYSTEM.bindDateButton();
+    </script>
 
 </body>
 
