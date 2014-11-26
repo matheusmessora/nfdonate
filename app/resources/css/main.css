@@ -139,3 +139,46 @@ h1 {
 .footer {
     padding-top: 20px;
 }
+#notify {
+    position: fixed;
+    top: 20px;
+     /* center the element */
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    width: 401px;
+    z-index: 9999;
+}
+#notify .notify-item {
+    background: #4dbd74;
+    /*    background: rgba(0, 0, 0, 0.8);*/
+    border: 1px solid #4dbd74;
+    color: white;
+    padding: 10px 15px;
+    font-size: 12px;
+    font-family: inherit;
+    -webkit-box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+#notify .glyphicon {
+       float:left;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    margin-right: 20px;
+    font-size: 22px;
+}
+#notify h3 {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0 0 7px 0;
+    margin: 0;
+}
+#notify p {
+    margin: 0;
+    word-wrap: break-word;
+    padding: 0 20px 0 0;
+    line-height: 17px;
+}

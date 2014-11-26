@@ -60,7 +60,7 @@
                     <div class="small-text-medium uppercase colored-text">SOBRE NÓS</div>
                     <h2>Facilitamos o seu modo de doar</h2>
                     <div class="divisor divisor-line colored-line"></div>
-                    <p>Doe sua nota fiscal sem esforço. Informe os dados necessários ou compartilhe com a hashtag #DoandoMinhaNota. Nós nos encarregamos do resto.</p>
+                    <p>Doe sua nota fiscal sem esforço. Informe os dados necessários. Nós nos encarregamos do resto.</p>
                 </div>
             </div>
 
@@ -83,8 +83,8 @@
                         <i class="glyphicon glyphicon-send colored-text i-lg"></i>
                         <div class="caption">
                             <h3 class="colored-text">Envie os dados</h3>
-                            <p>Envie a nota fiscal para nosso site por meio de uma das formas de envio.
-                                <br /><strong>Totalmente grátis.</strong>
+                            <p>Envie a nota fiscal para nosso site.
+                                <br /><strong>Totalmente gratuito.</strong>
                             </p>
                         </div>
                     </div>
@@ -115,7 +115,7 @@
                     <div class="small-text-medium uppercase colored-text">COMO DOAR</div>
                     <h2>Doe sua nota fiscal agora mesmo</h2>
                     <div class="divisor colored-line"></div>
-                    <p>Para doar via formulário, basta preencher os campos com os dados da sua nota fiscal.
+                    <p>Para doar, basta preencher os campos com os dados da sua nota fiscal.
                         <br /><strong>Lembre-se, a nota fiscal não pode estar vinculada a nenhum CPF</strong>.</p>
                 </div>
 
@@ -130,25 +130,30 @@
                             </select>
 
                         </div>
-                        <div class="form-group">
-                            <label for="exampleInputPassword1">Data da compra</label>
+                        <div id="g-donate-date" class="form-group">
+                            <label for="i-donate-date" class="control-label">Data da compra</label>
 
                             <div class='input-group date' id='datetimepicker5'>
-                                <input type="text" class="form-control" id="datetimepicker6" data-date-format="DD/MM/YYYY" />
+                                <input type="text" class="form-control" id="i-donate-date" data-date-format="DD/MM/YYYY" />
                                 <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+
                             </div>
+                            <span id="e-donate-date" class="help-block"></span>
 
                         </div>
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">COO</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="##########">
+                        <div class="form-group" id="g-donate-coo">
+                            <label for="i-donate-coo" class="control-label">COO</label>
+                            <input type="text" class="form-control" id="i-donate-coo" placeholder="##########">
+                            <span id="e-donate-coo" class="help-block"></span>
                         </div>
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Valor</label>
-                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="183,25">
+                        <div class="form-group" id="g-donate-value">
+                            <label for="i-donate-value" class="control-label">Valor</label>
+                            <input type="text" class="form-control" id="i-donate-value" placeholder="183,25">
+                            <span id="e-donate-value" class="help-block"></span>
                         </div>
 
-                        <a href="#" class="btn myButton">Doar</a>
+                        <a id="donate" href="#" class="btn myButton">Doar</a>
+                        <img id="donate-loading" src="http://www.apps.oas.org/oasmeetings/images/loading.gif" height="42" width="42" style="display:none" />
                     </form>
                 </div>
                 <div class="clearfix"></div>
@@ -158,28 +163,12 @@
         </div>
     </div>
 
-    <div class="content">
-        <div class="container">
-
-
-            <div class="row">
-                <div class="col-lg-12 text-left">
-                    <div class="small-text-medium uppercase colored-text">REDE SOCIAL</div>
-                    <h2>Doe usando a hashtag #DoandoMinhaNota</h2>
-                    <div class="divisor colored-line"></div>
-                    <p>Se quiser, você pode doar sua nota fiscal compartilhando no Facebook a imagem da sua nota fiscal (ela deve estar em boas condições de leitura) .
-                        <br />Além disso, coloque a hashtag <strong class="colored-text">#DoandoMinhaNota</strong> para podermos encontrá-la.</p>
-                </div>
-            </div>
-
-        </div>
-    </div>
 
     <!-- SITE CONTENT -->
     <div class="jumbotron">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-md-4 col-xm-12 col-xs-12">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                     <div class="stats">
                         <p><i class="glyphicon glyphicon-send colored-text i-lg"></i>
                         </p>
@@ -187,7 +176,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-4 col-xm-12 col-xs-12 colored-border">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 colored-border">
                     <div class="stats">
                         <p><i class="glyphicon glyphicon-thumbs-up colored-text i-lg"></i>
                         </p>
@@ -195,7 +184,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-4 col-xm-12 col-xs-12">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
                     <div class="stats">
                         <p><i class="glyphicon glyphicon-heart colored-text i-lg"></i>
                         </p>
@@ -245,6 +234,8 @@
     </div>
 
     <!--# include file="/includes/footer.html" -->
+
+    <!--# include file="/includes/notify.html" -->
 
     <script type="text/javascript">
         PANDOX.SYSTEM.bindDateButton();
