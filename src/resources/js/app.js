@@ -15,6 +15,7 @@ PANDOX.SYSTEM = function () {
         console.log("PANDOX.SYSTEM.init");
         PANDOX.FORM.init();
         PANDOX.DONATE.init();
+        PANDOX.UI.init();
     };
 
     var bindDateButton = function () {
@@ -36,6 +37,45 @@ PANDOX.SYSTEM = function () {
     }
 
 }();
+
+
+PANDOX.UI = function () {
+    
+    var init = function() {
+        bindDoarBtn();
+        bindMenuDoarBtn();
+        
+        
+    };
+    
+    var bindDoarBtn = function () {
+        $('.donateNowBtn').click(function (e) {
+            e.preventDefault();
+            scrollToDivName("doar");
+        });
+    };
+
+    var bindMenuDoarBtn = function () {
+        $('.donateNowMenuBtn').click(function (e) {
+            e.preventDefault();
+            scrollToDivName("doar");
+            $(".menu-mobile-btn").click();
+            
+        });
+    };
+    
+    var scrollToDivName = function (name) {
+        var aid = name;
+        var aTag = $("div[name='"+ aid +"']");
+        $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+    };
+
+    return {
+        init: init
+    }
+
+}();
+
 
 PANDOX.FORM = function () {
 
