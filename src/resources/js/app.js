@@ -44,8 +44,16 @@ PANDOX.UI = function () {
     var init = function() {
         bindDoarBtn();
         bindMenuDoarBtn();
+        bindMenuContatoBtn();
         
-        
+    };
+    
+    var bindMenuContatoBtn = function() {
+        $('.contactUsMenuBtn').click(function (e) {
+            e.preventDefault();
+            scrollToDivName("contato");
+            $(".menu-mobile-btn").click();
+        });  
     };
     
     var bindDoarBtn = function () {
