@@ -41,7 +41,7 @@ module.exports = function (grunt) {
             dist: {
                 files: {
                     src: [
-                        'dev/**/*.{js,css,img,jpg,gif,png}'
+                        'dev/**/*.{js,css}'
                     ]
                 }
             }
@@ -80,7 +80,7 @@ module.exports = function (grunt) {
                 files: [
                     {
                         cwd: 'src/',
-                        src: ['*.html', 'includes/*.html'],
+                        src: ['*.html', 'includes/*.html', 'resources/img/*'],
                         dest: 'dev',
                         expand: true
                     }
