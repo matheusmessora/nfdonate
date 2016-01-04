@@ -30,7 +30,8 @@ h1 {
     color: #FFF;
 }
 .navbar-brand,
-ul {
+ul,
+.footer {
     font-size: 14px;
     text-transform: uppercase;
     font-weight: bold;
@@ -159,9 +160,6 @@ ul {
     color: #FFFFFF;
     margin-top: 20px;
 }
-.footer {
-    padding-top: 20px;
-}
 #notify {
     position: fixed;
     top: 60px;
@@ -204,4 +202,18 @@ ul {
     word-wrap: break-word;
     padding: 0 20px 0 0;
     line-height: 17px;
+}
+
+.footer {
+    border-top: #008ed6 1px solid;
+    margin-top: 30px;
+    padding-top: 20px;
+    background: #000;
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 991px) {
+    .footer {
+        font-size: 11px;   
+    }
 }
