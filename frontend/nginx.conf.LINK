@@ -2,7 +2,7 @@ server {
     listen nfdonate.com.br:80;
     
 
-	root   /home/matheus/development/git/nfdonate/dev;
+	root   /home/matheus/development/git/nfdonate/frontend/dev;
 
     location / {
         ssi on;
