@@ -1,0 +1,38 @@
+package integration;
+
+import br.com.pandox.nfdonate.view.endpoint.fiscalNote.FiscalNoteDTO;
+import com.jayway.restassured.http.ContentType;
+import integration.json.JsonSerializer;
+import integration.shared.IntegrationServer;
+import org.apache.http.HttpStatus;
+import org.testng.annotations.Test;
+
+import java.time.LocalDate;
+
+import static com.jayway.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.nullValue;
+
+public class FiscalNoteEndpointCreationIT extends IntegrationServer {
+
+    @Test
+    public void should_create_fiscal_note() {
+        createFiscalNoteWithMandatoryFields();
+    }
+
+    private void createFiscalNoteWithMandatoryFields() {
+        FiscalNoteDTO dto = new FiscalNoteDTO("100", "40791470822", 100.00, LocalDate.now());
+        JsonSerializer serializer = new JsonSerializer();
+        String json = serializer.toJson(dto);
+
+        given()
+            .contentType(ContentType.JSON)
+            .body(json)
+            .when()
+                .post("http://127.0.0.1:" + jettyPort + "/" + FiscalNoteDTO.URI + "")
+            .then()
+                .assertThat()
+                .statusCode(HttpStatus.SC_CREATED);
+    }
+
+}
