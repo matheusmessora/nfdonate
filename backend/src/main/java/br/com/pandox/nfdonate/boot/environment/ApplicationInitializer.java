@@ -52,7 +52,7 @@ public class ApplicationInitializer {
         LOGGER.info("Configurando [entityManagerFactory]...");
         LocalContainerEntityManagerFactoryBean entityManagerFactoryBean = new LocalContainerEntityManagerFactoryBean();
         entityManagerFactoryBean.setDataSource(dataSource());
-        entityManagerFactoryBean.setPackagesToScan("br.messora.matheus.prova.infrastructure.repository");
+        entityManagerFactoryBean.setPackagesToScan("br.com.pandox.nfdonate.infrastructure.repository");
         entityManagerFactoryBean.setPersistenceProviderClass(HibernatePersistence.class);
         Properties hibernateProperties = new Properties();
         hibernateProperties.put("hibernate.hbm2ddl.auto", "create");
