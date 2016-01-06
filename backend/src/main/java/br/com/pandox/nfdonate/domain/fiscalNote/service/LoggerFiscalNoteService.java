@@ -16,9 +16,6 @@ public class LoggerFiscalNoteService implements FiscalNoteService {
 
     private static final Logger logger = LogManager.getLogger("FileLogger");
 
-    @Autowired
-    private ObjectMapper mapper;
-
     @Override
     public FiscalNote create(FiscalNoteDTO dto) {
         FiscalNote fiscalNote = new SimpleFiscalNote(dto.coo, dto.cnpj, dto.purchaseDate, dto.value);

@@ -5,6 +5,7 @@ import br.com.pandox.nfdonate.domain.fiscalNote.COO;
 import br.com.pandox.nfdonate.domain.fiscalNote.FiscalNote;
 import br.com.pandox.nfdonate.domain.money.MonetaryValue;
 import br.com.pandox.nfdonate.domain.socialEntity.SocialEntity;
+import com.google.common.base.Strings;
 
 import java.time.LocalDate;
 
@@ -16,6 +17,10 @@ public class SimpleFiscalNote implements FiscalNote {
     private final MonetaryValue monetaryValue;
 
     public SimpleFiscalNote(String coo, String cnpj, LocalDate purchaseDate, Double value) {
+        if (Strings.isNullOrEmpty(coo) || Strings.isNullOrEmpty(cnpj) || purchaseDate ==  null || value == null) {
+            throw new IllegalArgumentException();
+        }
+
         this.coo = COO.from(coo);
         this.cnpj = cnpj;
         this.purchaseDate = purchaseDate;
