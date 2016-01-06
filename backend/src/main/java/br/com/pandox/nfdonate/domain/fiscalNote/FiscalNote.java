@@ -1,12 +1,13 @@
 package br.com.pandox.nfdonate.domain.fiscalNote;
 
 import br.com.pandox.nfdonate.domain.UUID;
+import br.com.pandox.nfdonate.domain.behaviour.KeyValuePrint;
+import br.com.pandox.nfdonate.domain.money.MonetaryValue;
 import br.com.pandox.nfdonate.domain.socialEntity.SocialEntity;
 
 import java.time.LocalDate;
-import java.util.Currency;
 
-public interface FiscalNote {
+public interface FiscalNote extends KeyValuePrint {
 
     UUID id();
 
@@ -14,7 +15,7 @@ public interface FiscalNote {
 
     COO coo();
 
-    Currency value();
+    MonetaryValue value();
 
     SocialEntity socialEntity();
 

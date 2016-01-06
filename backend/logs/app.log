@@ -1,0 +1,4 @@
+2016-01-06 10:42:25,835 INFO FileLogger [qtp1627857534-15] coo=br.com.pandox.nfdonate.domain.fiscalNote.COO@5730d6a7, cnpj=40791470822, purchaseDate=2016-01-06, value=br.com.pandox.nfdonate.domain.money.MonetaryValue@61cd2eaf
+2016-01-06 10:45:31,596 INFO FileLogger [qtp1790421142-15] coo=100, cnpj=40791470822, purchaseDate=2016-01-06, monetaryValue=100.0
+2016-01-06 10:46:16,985 INFO coo=100, cnpj=40791470822, purchaseDate=2016-01-06, monetaryValue=100.0
+2016-01-06 10:46:32,861 coo=100, cnpj=40791470822, purchaseDate=2016-01-06, monetaryValue=100.0

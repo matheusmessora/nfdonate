@@ -1,6 +1,6 @@
 package integration;
 
-import br.com.pandox.nfdonate.view.endpoint.fiscalNote.FiscalNoteDTO;
+import br.com.pandox.nfdonate.domain.fiscalNote.dto.FiscalNoteDTO;
 import com.jayway.restassured.http.ContentType;
 import integration.json.JsonSerializer;
 import integration.shared.IntegrationServer;
@@ -10,7 +10,6 @@ import org.testng.annotations.Test;
 import java.time.LocalDate;
 
 import static com.jayway.restassured.RestAssured.given;
-import static org.hamcrest.Matchers.equalTo;
 import static org.hamcrest.Matchers.nullValue;
 
 public class FiscalNoteEndpointCreationIT extends IntegrationServer {

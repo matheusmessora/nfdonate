@@ -1,6 +1,21 @@
 package br.com.pandox.nfdonate.domain.fiscalNote;
 
-public interface COO {
+import org.springframework.util.StringUtils;
 
-    String value();
+public class COO {
+
+    private String value;
+
+    private COO(String coo) {
+        this.value = coo;
+    }
+
+    public String value(){
+        return value;
+    }
+
+    public static COO from(String coo) {
+        return new COO(coo);
+    }
+
 }

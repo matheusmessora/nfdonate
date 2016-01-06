@@ -40,15 +40,21 @@ public class ApplicationInitializer extends WebMvcConfigurerAdapter {
     @Autowired
     private Environment env;
 
-    @Override
-    public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
-        MappingJackson2HttpMessageConverter converter = new MappingJackson2HttpMessageConverter();
+    @Autowired
+    private ObjectMapper mapper;
 
+    @Bean
+    public ObjectMapper getObjectMapper(){
         ObjectMapper mapper = new ObjectMapper();
         mapper.disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
         mapper.enable(DeserializationFeature.ACCEPT_EMPTY_STRING_AS_NULL_OBJECT);
         mapper.setSerializationInclusion(JsonInclude.Include.NON_EMPTY);
+        return mapper;
+    }
 
+    @Override
+    public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
+        MappingJackson2HttpMessageConverter converter = new MappingJackson2HttpMessageConverter();
         converter.setObjectMapper(mapper);
         converters.add(converter);
     }

@@ -1,10 +1,9 @@
-package br.com.pandox.nfdonate.boot.json;
+package br.com.pandox.nfdonate.view.endpoint.json;
 
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.DeserializationContext;
 import com.fasterxml.jackson.databind.JsonDeserializer;
-import com.fasterxml.jackson.databind.deser.std.JdkDeserializers;
 
 import java.io.IOException;
 import java.time.LocalDate;

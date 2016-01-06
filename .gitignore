@@ -19,3 +19,4 @@ dev/
 *.idea
 *.iml
 backend/target/
+backend/logs/

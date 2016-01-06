@@ -1,7 +1,7 @@
-package br.com.pandox.nfdonate.view.endpoint.fiscalNote;
+package br.com.pandox.nfdonate.domain.fiscalNote.dto;
 
-import br.com.pandox.nfdonate.boot.json.LocalDateDeserializer;
-import br.com.pandox.nfdonate.boot.json.LocalDateSerializer;
+import br.com.pandox.nfdonate.view.endpoint.json.LocalDateDeserializer;
+import br.com.pandox.nfdonate.view.endpoint.json.LocalDateSerializer;
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
