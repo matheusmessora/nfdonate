@@ -140,15 +140,18 @@ PANDOX.DONATE = function () {
     var bindDonateBtn = function () {
         $('#donate').click(function (e) {
             e.preventDefault();
-            $("#donate-loading").show();
-            $("#donate").hide();
+            //$("#donate-loading").show();
+            //$("#donate").hide();
 
-            var haserror = false;
+            var hasError = false;
             var date = $("#i-donate-date").val();
             if (PANDOX.SYSTEM.isBlank(date)) {
                 hasError = true;
                 PANDOX.FORM.markErrorOnField("donate-date", "Data é obrigatória");
-            }
+            }else {
+                var parts = date.split('/');
+                date = new Date(parts[2],parts[1]-1,parts[0]); 
+            }   
 
             var coo = $("#i-donate-coo").val();
             if (PANDOX.SYSTEM.isBlank(coo)) {
@@ -160,20 +163,28 @@ PANDOX.DONATE = function () {
             if (PANDOX.SYSTEM.isBlank(value)) {
                 hasError = true;
                 PANDOX.FORM.markErrorOnField("donate-value", "Valor é obrigatório");
+            }else {
+                value = value.replace(",", ".");   
+                value = parseFloat(value);
+            }
+            
+            var cnpj = $("#i-donate-cnpj").val();
+            if (PANDOX.SYSTEM.isBlank(value)) {
+                cnpj = "12791298000184"; // AMPARA
             }
 
             if (hasError) {
 
             } else {
                 var json = {
-                    entity: 1,
-                    date: date,
+                    cnpj: cnpj,
+                    purchaseDate: date.toISOString(),
                     coo: coo,
                     value: value
                 };
 
                 var request = $.ajax({
-                    url: "/api/invoice",
+                    url: "/api/fiscal_note",
                     type: "POST",
                     data: JSON.stringify(json),
                     contentType: "application/json"

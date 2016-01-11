@@ -21,13 +21,14 @@ public class FiscalNoteDTO {
         this.purchaseDate = purchaseDate;
     }
 
+    @JsonDeserialize(using = LocalDateDeserializer.class)
+    @JsonSerialize(using = LocalDateSerializer.class)
+    public LocalDate purchaseDate;
     public String coo;
     public String cnpj;
     public Double value;
 
-    @JsonDeserialize(using = LocalDateDeserializer.class)
-    @JsonSerialize(using = LocalDateSerializer.class)
-    public LocalDate purchaseDate;
+
 
 
 }
