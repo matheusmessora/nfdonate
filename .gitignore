@@ -15,3 +15,8 @@ hs_err_pid*
 dist
 node_modules/
 dev/
+
+*.idea
+*.iml
+backend/target/
+backend/logs/
